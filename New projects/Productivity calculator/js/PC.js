@@ -3,6 +3,7 @@ window.onload = pageLoad;
 function pageLoad() {
 
     $(".firstList").hide();
+    $(".secondList").hide();
 //alert("This is my space");
 
 //console.log(document.forms.firstSubmit);
@@ -36,19 +37,8 @@ function Firstform() {
         Taskdescription = "Task6";
     }
 
-    if (List1.innerHTML == ""){
-        List1.innerHTML = Taskdescription;
-    }else if (List1.innerHTML != "" && List2.innerHTML == "" && Taskdescription != List1.innerHTML){
-        List2.innerHTML = Taskdescription;
-    }else if (List1.innerHTML != "" && List2.innerHTML != "" && List3.innerHTML == "" && Taskdescription != List1.innerHTML && List2.innerHTML != Taskdescription) {
-        List3.innerHTML = Taskdescription;
-    }else if (List1.innerHTML != "" && List2.innerHTML != "" && List3.innerHTML != "" && List4.innerHTML == "" && Taskdescription != List1.innerHTML && List2.innerHTML != Taskdescription && List3.innerHTML != Taskdescription) {
-        List4.innerHTML = Taskdescription;
-    }else if (List1.innerHTML != "" && List2.innerHTML != "" && List3.innerHTML != "" && List4.innerHTML != "" && List5.innerHTML == "" && Taskdescription != List1.innerHTML && List2.innerHTML != Taskdescription && List3.innerHTML != Taskdescription && List4.innerHTML != Taskdescription) {
-        List5.innerHTML = Taskdescription;
-    }else if (List1.innerHTML != "" && List2.innerHTML != "" && List3.innerHTML != "" && List4.innerHTML != "" && List5.innerHTML != "" && List6.innerHTML == "" && Taskdescription != List1.innerHTML && List2.innerHTML != Taskdescription && List3.innerHTML != Taskdescription && List4.innerHTML != Taskdescription && List5.innerHTML != Taskdescription) {
-        List6.innerHTML = Taskdescription;
-    }
+    
+    
 
     $(".firstList").show();
     
@@ -73,6 +63,43 @@ function secondform(){
     //alert(firstInput.value);
 
     //alert("This is my second form");
+    return false;
+}
+
+var thirdForm = document.forms.thirdSubmit;
+thirdForm.onsubmit = thirdform;
+
+function thirdform(){
+
+
+    var taskDesc = document.getElementById("cTaskDesc");
+    var ctaskinput = taskDesc.value;
+
+    var Clist1 = document.getElementById("clist1");
+    var Clist2 = document.getElementById("clist2");
+    var Clist3 = document.getElementById("clist3");
+    var Clist4 = document.getElementById("clist4");
+    var Clist5 = document.getElementById("clist5");
+    var Clist6 = document.getElementById("clist6");
+
+    if (Clist1.innerHTML == ""){
+        Clist1.innerHTML = ctaskinput;
+    }else if (Clist1.innerHTML != "" && Clist2.innerHTML == "" && ctaskinput != Clist1.innerHTML){
+        Clist2.innerHTML = ctaskinput;
+    }else if (Clist1.innerHTML != "" && Clist2.innerHTML != "" && Clist3.innerHTML == "" && ctaskinput != Clist1.innerHTML && Clist2.innerHTML != ctaskinput) {
+        Clist3.innerHTML = ctaskinput;
+    }else if (Clist1.innerHTML != "" && Clist2.innerHTML != "" && Clist3.innerHTML != "" && Clist4.innerHTML == "" && ctaskinput != Clist1.innerHTML && Clist2.innerHTML != ctaskinput && Clist3.innerHTML != ctaskinput) {
+        Clist4.innerHTML = ctaskinput;
+    }else if (Clist1.innerHTML != "" && Clist2.innerHTML != "" && Clist3.innerHTML != "" && Clist4.innerHTML != "" && Clist5.innerHTML == "" && ctaskinput != Clist1.innerHTML && Clist2.innerHTML != ctaskinput && Clist3.innerHTML != ctaskinput && Clist4.innerHTML != ctaskinput) {
+        Clist5.innerHTML = ctaskinput;
+    }else if (Clist1.innerHTML != "" && Clist2.innerHTML != "" && Clist3.innerHTML != "" && Clist4.innerHTML != "" && Clist5.innerHTML != "" && Clist6.innerHTML == "" && ctaskinput != Clist1.innerHTML && Clist2.innerHTML != ctaskinput && Clist3.innerHTML != ctaskinput && Clist4.innerHTML != ctaskinput && Clist5.innerHTML != ctaskinput) {
+        Clist6.innerHTML = ctaskinput;
+    }
+
+    $(".secondList").show();
+   
+    //alert(taskDesc.value);
+//alert("This is my third form");
     return false;
 }
 
