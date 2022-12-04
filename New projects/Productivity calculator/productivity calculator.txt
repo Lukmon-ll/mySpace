@@ -1,0 +1,41 @@
+Productivity calculator - web application student and mobile app
+-students should be able to select the to do list categories
+-student should be able to pick the grading value for each category selected
+-all selected categories should amount to 100%
+
+categories with different grading scores
+-important to do list daily
+-calls daily
+-groceries weekly
+-exercise weekly
+
+-etc
+
+setting the calculator(all categories) has to be from the previous day
+
+Honest grading can be throughout the day and the final grading(completion rating) by yourself by 23:50 on all the categories
+
+daily grading, weekly grading, and monthly grading by 23:59 (can be based on each categories and overall grading) celebration animation  
+
+graphical representation of the daily, weekly and monthly productivity. 
+
+Thump up notification getting past 50% productive level
+
+Reminder to get productive twice daily by email or text
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+

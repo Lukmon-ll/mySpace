@@ -1,0 +1,89 @@
+<!DOCTYPE html> 
+<html lang="en">
+
+<head>
+    <title>Productivity calculator</title>
+<meta charset="UTF-8">
+<meta name="Description" content="productivity calculator description to maximise SEO">
+<meta name="Author" content="Lukmon .O Lasisi is something something">
+<meta name="keywords" content="productive, productivity, being productive, calculator, reminder">
+<script src="jquery-3.6.1.js"></script>
+<script src="jquery-3.6.1.min.js"></script>
+<script src="js/PC.js"></script>
+<link rel="stylesheet" href="css/PC.css">
+</head>
+
+<body>
+<header>
+    <h1><a href="index.html">Productivity calculator</a></h1>
+    <nav>
+        
+        
+    </nav>
+</header>
+<main>
+    <h3 id="listtodo">To do list for the day</h3>
+<p>Please select the days tasks</p>
+<form name="firstSubmit"  action="#" method="GET">
+<fieldset>
+<legend>System Tasks Selection</legend>
+    <select name="staskDesc" id="taskDesc">
+        <option value="EX">Exercise</option>
+        <option value="RE">Read</option>
+        <option value="GR">Groceries</option>
+        <option value="T4">task4</option>
+        <option value="T5">task5</option>
+        <option value="T6">task6</option>
+        
+    </select>
+    <input type="submit" value="Select">
+</fieldset>
+</form>
+
+
+<form action="#" method="GET" name="secondSubmit">
+<fieldset>
+    <legend>Selected System Tasks</legend>
+
+<ol class="firstList">
+    <li id="list1"></li> <input  id="FirstList1" type="number" min="1" max="10" name="firstList1">
+    <li id="list2"></li> <input  id="FirstList2" type="number" min="1" max="10" name="firstList2">
+    <li id="list3"></li> <input  id="FirstList3" type="number" min="1" max="10" name="firstList3">
+    <li id="list4"></li> <input  id="FirstList4" type="number" min="1" max="10" name="firstList4">
+    <li id="list5"></li> <input  id="FirstList5" type="number" min="1" max="10" name="firstList5">
+    <li id="list6"></li> <input  id="FirstList6" type="number" min="1" max="10" name="firstList6">
+    
+</ol>
+<input type="submit" value="Submit User Score">
+
+</fieldset>
+</form>
+
+
+
+<form name="thirdSubmit" action="#" method="GET">
+    <fieldset>
+        <legend>Custom Tasks Input</legend>
+        <input id="cTaskDesc" type="text" name="rr">
+        <input  type="submit" value="Input Task">
+    </fieldset>
+</form>
+    <form action="" method="GET" name="">
+        <fieldset>
+            <legend>Custom Tasks description</legend>
+<ol class="secondList">
+    <li id="clist1"></li> <input type="number" min="1" max="10" >
+    <li id="clist2"></li> <input type="number" min="1" max="10" >
+    <li id="clist3"></li> <input type="number" min="1" max="10" >
+    <li id="clist4"></li> <input type="number" min="1" max="10" >
+    <li id="clist5"></li> <input type="number" min="1" max="10" >
+    <li id="clist6"></li> <input type="number" min="1" max="10" >
+</ol>
+<input type="submit" value="Enter User Scores">
+</fieldset>
+</form>
+
+</main>
+</body>
+
+</html>
