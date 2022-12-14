@@ -22,65 +22,99 @@
     </nav>
 </header>
 <main>
-    <h3 id="listtodo">To do list for the day</h3>
-<p>Please select the days tasks</p>
+    
+<h3>Enter tasks for the day</h3>
+<!-- system tasks selection form -->
 <form name="firstSubmit"  action="#" method="GET">
 <fieldset>
-<legend>System Tasks Selection</legend>
+<legend>System Task</legend>
     <select name="staskDesc" id="taskDesc">
-        <option value="EX">Exercise</option>
-        <option value="RE">Read</option>
-        <option value="GR">Groceries</option>
-        <option value="T4">task4</option>
-        <option value="T5">task5</option>
-        <option value="T6">task6</option>
+        <option value="EX">Exercise for x hours</option>
+        <option value="RE">Read x chapters</option>
+        <option value="GR">Get x groceries</option>
+        <option value="T4">Attend x meeting</option>
+        <option value="T5">Submit x assignments</option>
+        <option value="T6">Send x applications</option>
         
     </select>
-    <input type="submit" value="Select">
+    <input type="submit" value="Enter"><!--submit button for system tasks selection-->
 </fieldset>
 </form>
 
-
-<form action="#" method="GET" name="secondSubmit">
+<!-- form to submit input for the system tasks-->
+<div class="parent1">
+    <div class="child1">
+<form action="#" method="GET" name="secondSubmit" class="firstList">
 <fieldset>
-    <legend>Selected System Tasks</legend>
+    <legend>System Task Description</legend>
 
-<ol class="firstList">
-    <li id="list1"></li> <input  id="FirstList1" type="number" min="1" max="10" name="firstList1">
-    <li id="list2"></li> <input  id="FirstList2" type="number" min="1" max="10" name="firstList2">
-    <li id="list3"></li> <input  id="FirstList3" type="number" min="1" max="10" name="firstList3">
-    <li id="list4"></li> <input  id="FirstList4" type="number" min="1" max="10" name="firstList4">
-    <li id="list5"></li> <input  id="FirstList5" type="number" min="1" max="10" name="firstList5">
-    <li id="list6"></li> <input  id="FirstList6" type="number" min="1" max="10" name="firstList6">
+<ol class="frstList">
+    <li id="list1"></li> <label for="FirstList1">Relative task grade: </label><input  id="FirstList1" type="number" min="1" max="10" name="firstList1">
+    <li id="list2"></li> <label for="FirstList2">Relative task grade: </label><input  id="FirstList2" type="number" min="1" max="10" name="firstList2">
+    <li id="list3"></li> <label for="FirstList3">Relative task grade: </label><input  id="FirstList3" type="number" min="1" max="10" name="firstList3">
+    <li id="list4"></li> <label for="FirstList4">Relative task grade: </label><input  id="FirstList4" type="number" min="1" max="10" name="firstList4">
+    <li id="list5"></li> <label for="FirstList5">Relative task grade: </label><input  id="FirstList5" type="number" min="1" max="10" name="firstList5">
+    <li id="list6"></li> <label for="FirstList6">Relative task grade: </label><input  id="FirstList6" type="number" min="1" max="10" name="firstList6">
     
 </ol>
-<input type="submit" value="Submit User Score">
+<input type="submit" value="Submit System Task Score"><!--submit button for system task inputs-->
 
 </fieldset>
+
 </form>
-
-
+</div>
+<div class="child2">
+<div class="workForTaskScore">
+<h3>System tasks description with daily task grading in (%)</h3>
+        <ol  id="wfts">
+            <li id="L1"></li><p id="LL1"></p>
+            <li id="L2"></li><p id="LL2"></p>
+            <li id="L3"></li><p id="LL3"></p>
+            <li id="L4"></li><p id="LL4"></p>
+            <li id="L5"></li><p id="LL5"></p>
+            <li id="L6"></li><p id="LL6"></p>
+        </ol>
+    </div>
+        
+</div>  
+</div>
+<!--custom task description form-->
 <form name="thirdSubmit" action="#" method="GET">
     <fieldset>
-        <legend>Custom Tasks Input</legend>
+        <legend>Custom Task</legend>
         <input id="cTaskDesc" type="text" name="cTaskInput">
-        <input  type="submit" value="Task Input">
+        <input  type="submit" value="Enter"><!--submit button for custom task description-->
     </fieldset>
 </form>
-    <form action="" method="GET" name="">
+<!--form to submit inputs for the custom tasks-->
+    <form action="" method="GET" name="fourthSubmit" class="secondList">
         <fieldset>
-            <legend>Custom Tasks description</legend>
-<ol class="secondList">
-    <li id="clist1"></li> <input type="number" min="1" max="10" >
-    <li id="clist2"></li> <input type="number" min="1" max="10" >
-    <li id="clist3"></li> <input type="number" min="1" max="10" >
-    <li id="clist4"></li> <input type="number" min="1" max="10" >
-    <li id="clist5"></li> <input type="number" min="1" max="10" >
-    <li id="clist6"></li> <input type="number" min="1" max="10" >
+            <legend>Custom Task description</legend>
+<ol class="scondList">
+    <li id="clist1"></li> <label for="clistfirst">Relative task grade: </label><input id="clistfirst" type="number" min="1" max="10" >
+    <li id="clist2"></li> <label for="clistsecond">Relative task grade: </label><input id="clistsecond" type="number" min="1" max="10" >
+    <li id="clist3"></li> <label for="clistthird">Relative task grade: </label><input id="clistthird" type="number" min="1" max="10" >
+    <li id="clist4"></li> <label for="clistfourth">Relative task grade: </label><input id="clistfourth" type="number" min="1" max="10" >
+    <li id="clist5"></li> <label for="clistfifth">Relative task grade: </label><input id="clistfifth" type="number" min="1" max="10" >
+    <li id="clist6"></li> <label for="clistsixth">Relative task grade: </label><input id="clistsixth" type="number" min="1" max="10" >
 </ol>
-<input type="submit" value="Enter User Scores">
+<input type="submit" value="Submit Custom Task Score"><!--submit button for custom task inputs-->
 </fieldset>
 </form>
+<div class="cworkForTaskScore">
+<h3>Custom tasks description with daily task grading in (%)</h3>
+        <ol  id="cwfts">
+            <li id="cL1"></li><p id="cLL1"></p>
+            <li id="cL2"></li><p id="cLL2"></p>
+            <li id="cL3"></li><p id="cLL3"></p>
+            <li id="cL4"></li><p id="cLL4"></p>
+            <li id="cL5"></li><p id="cLL5"></p>
+            <li id="cL6"></li><p id="cLL6"></p>
+        </ol>
+    </div>
+
+    <h3>Task accomplishment</h3>
+
 
 </main>
 </body>

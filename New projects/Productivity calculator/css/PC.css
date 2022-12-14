@@ -1,3 +1,29 @@
 #listtodo {
     color: red;
 }
+
+html {
+background-color: bisque;
+box-sizing: border-box;
+
+}
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+.parent1 {
+    display: flex;
+    flex-flow: row wrap;
+}
+.child1 {
+    flex: 2 0 0;
+    border: 1px solid black;
+    padding: 1em;
+}
+
+.child2 {
+flex: 1 0 0;
+border: 1px solid black;
+padding: 1em;
+}
+
