@@ -6,6 +6,7 @@ function pageLoad() {
     $(".secondList").hide();
     $(".workForTaskScore").hide();
     $(".cworkForTaskScore").hide();
+    //$(".error").hide();
 
 //alert("This is my space");
 
@@ -25,6 +26,7 @@ function Firstform() {
     var List4 = document.getElementById("list4");
     var List5 = document.getElementById("list5");
     var List6 = document.getElementById("list6");
+    //var ER = document.getElementById("error");
 
     if (firstSelect.value == "EX") {
         Taskdescription = "Exercise for x hours";
@@ -52,9 +54,15 @@ function Firstform() {
         List5.innerHTML = Taskdescription;
     }else if (List1.innerHTML != "" && List2.innerHTML != "" && List3.innerHTML != "" && List4.innerHTML != "" && List5.innerHTML != "" && List6.innerHTML == "" && Taskdescription != List1.innerHTML && List2.innerHTML != Taskdescription && List3.innerHTML != Taskdescription && List4.innerHTML != Taskdescription && List5.innerHTML != Taskdescription) {
         List6.innerHTML = Taskdescription;
-    }
-    
+    }//else if (List1.innerHTML != "" && Taskdescription == List1.innerHTML){
+        //ER.innerHTML = "*** This task has already been selected.";
+       // $(".error").show();
+    //}
+
+
+
     $(".firstList").show();
+    
 
     //console.log(firstInput.value);
 

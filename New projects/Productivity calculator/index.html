@@ -14,8 +14,12 @@
 </head>
 
 <body>
-<header>
-    <h1><a href="index.html">Productivity calculator</a></h1>
+<header class="theHead">
+    <h1 id="PC"><a href="index.html">Productivity calculator</a></h1>
+    <div class="PCnote">
+    <p>This app works by the user's discretion, users input the days' tasks initial grading totalling 10.</p>
+    <p>This is outputed in percentages by the application, and the percentage grading is used with the completion percentage score in the calculation of the user's days' productivity level.</p>
+</div>
     <nav>
         
         
@@ -23,7 +27,8 @@
 </header>
 <main>
     
-<h3>Enter tasks for the day</h3>
+<h4>Enter tasks for the day</h4>
+
 <!-- system tasks selection form -->
 <form name="firstSubmit"  action="#" method="GET">
 <fieldset>
@@ -37,7 +42,7 @@
         <option value="T6">Send x applications</option>
         
     </select>
-    <input type="submit" value="Enter"><!--submit button for system tasks selection-->
+    <input class="btn1" type="submit" value="Enter"><p class="error"></p><!--submit button for system tasks selection-->
 </fieldset>
 </form>
 
@@ -46,18 +51,18 @@
     <div class="child1">
 <form action="#" method="GET" name="secondSubmit" class="firstList">
 <fieldset>
-    <legend>System Task Description</legend>
+    <legend>Task Description</legend>
 
 <ol class="frstList">
-    <li id="list1"></li> <label for="FirstList1">Relative task grade: </label><input  id="FirstList1" type="number" min="1" max="10" name="firstList1">
-    <li id="list2"></li> <label for="FirstList2">Relative task grade: </label><input  id="FirstList2" type="number" min="1" max="10" name="firstList2">
-    <li id="list3"></li> <label for="FirstList3">Relative task grade: </label><input  id="FirstList3" type="number" min="1" max="10" name="firstList3">
-    <li id="list4"></li> <label for="FirstList4">Relative task grade: </label><input  id="FirstList4" type="number" min="1" max="10" name="firstList4">
-    <li id="list5"></li> <label for="FirstList5">Relative task grade: </label><input  id="FirstList5" type="number" min="1" max="10" name="firstList5">
-    <li id="list6"></li> <label for="FirstList6">Relative task grade: </label><input  id="FirstList6" type="number" min="1" max="10" name="firstList6">
+    <li id="list1"></li><div class="input1"><label for="FirstList1">Relative task grade for 1: </label><input  id="FirstList1" type="number" min="1" max="10" name="firstList1"></div>
+    <li id="list2"></li> <div class="input1"><label for="FirstList2">Relative task grade for 2: </label><input  id="FirstList2" type="number" min="1" max="10" name="firstList2"></div>
+    <li id="list3"></li><div class="input1"><label for="FirstList3">Relative task grade for 3: </label><input  id="FirstList3" type="number" min="1" max="10" name="firstList3"></div>
+    <li id="list4"></li><div class="input1"><label for="FirstList4">Relative task grade for 4: </label><input  id="FirstList4" type="number" min="1" max="10" name="firstList4"></div>
+    <li id="list5"></li><div class="input1"><label for="FirstList5">Relative task grade for 5: </label><input  id="FirstList5" type="number" min="1" max="10" name="firstList5"></div>
+    <li id="list6"></li> <div class="input1"><label for="FirstList6">Relative task grade for 6: </label><input  id="FirstList6" type="number" min="1" max="10" name="firstList6"></div>
     
 </ol>
-<input type="submit" value="Submit System Task Score"><!--submit button for system task inputs-->
+<input class="btn1" type="submit" value="Submit System Task Score"><!--submit button for system task inputs-->
 
 </fieldset>
 
@@ -81,24 +86,24 @@
 <!--custom task description form-->
 <form name="thirdSubmit" action="#" method="GET">
     <fieldset>
-        <legend>Custom Task</legend>
+         <legend>Custom Task</legend>
         <input id="cTaskDesc" type="text" name="cTaskInput">
-        <input  type="submit" value="Enter"><!--submit button for custom task description-->
+        <input class="btn1"  type="submit" value="Enter"><!--submit button for custom task description-->
     </fieldset>
 </form>
 <!--form to submit inputs for the custom tasks-->
     <form action="" method="GET" name="fourthSubmit" class="secondList">
         <fieldset>
-            <legend>Custom Task description</legend>
+            <legend>Task description</legend>
 <ol class="scondList">
-    <li id="clist1"></li> <label for="clistfirst">Relative task grade: </label><input id="clistfirst" type="number" min="1" max="10" >
-    <li id="clist2"></li> <label for="clistsecond">Relative task grade: </label><input id="clistsecond" type="number" min="1" max="10" >
-    <li id="clist3"></li> <label for="clistthird">Relative task grade: </label><input id="clistthird" type="number" min="1" max="10" >
-    <li id="clist4"></li> <label for="clistfourth">Relative task grade: </label><input id="clistfourth" type="number" min="1" max="10" >
-    <li id="clist5"></li> <label for="clistfifth">Relative task grade: </label><input id="clistfifth" type="number" min="1" max="10" >
-    <li id="clist6"></li> <label for="clistsixth">Relative task grade: </label><input id="clistsixth" type="number" min="1" max="10" >
+    <li id="clist1"></li> <label for="clistfirst">Relative task grade: </label><input id="clistfirst" type="number" min="1" max="10">
+    <li id="clist2"></li> <label for="clistsecond">Relative task grade: </label><input id="clistsecond" type="number" min="1" max="10">
+    <li id="clist3"></li> <label for="clistthird">Relative task grade: </label><input id="clistthird" type="number" min="1" max="10">
+    <li id="clist4"></li> <label for="clistfourth">Relative task grade: </label><input id="clistfourth" type="number" min="1" max="10">
+    <li id="clist5"></li> <label for="clistfifth">Relative task grade: </label><input id="clistfifth" type="number" min="1" max="10">
+    <li id="clist6"></li> <label for="clistsixth">Relative task grade: </label><input id="clistsixth" type="number" min="1" max="10">
 </ol>
-<input type="submit" value="Submit Custom Task Score"><!--submit button for custom task inputs-->
+<input class="btn1" type="submit" value="Submit Custom Task Score"><!--submit button for custom task inputs-->
 </fieldset>
 </form>
 <div class="cworkForTaskScore">
@@ -113,7 +118,7 @@
         </ol>
     </div>
 
-    <h3>Task accomplishment</h3>
+    <h4>Task accomplishment</h4>
 
 
 </main>
